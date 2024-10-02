@@ -1,27 +1,59 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.header{
+    background-color:#445626 ;
+    text-align: center;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.header a {
+    margin: 2px 15px 10px 15px; 
+    text-decoration: none; 
+    color: #fff; 
+    font-size: 30px;
   }
+
+.header a:hover{
+    transform:scale(80%);
+    color: #BDB76B;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.header nav {
+    display: flex; 
+    justify-content: center;
+    color: aliceblue; 
   }
+.parentcont{
+    
+    justify-content: center;
+    align-items: center;
 }
+.childcont1{
+    background-color:#BDB76B;
+    padding:10px 15px 10px 15px;
+    margin:0px ;
+    text-align: center;
+
+}
+
+
+  .footer nav {
+    display: flex;
+    justify-content: center;
+    opacity: 70%;
+    margin-top: 10px;
+  }
+  
+  .homeContainer {
+        background-color: #BDB76B;
+        padding: 10px 15px;
+        margin: 0px;
+        display: flex;               
+        justify-content: space-between; 
+        align-items: center;           
+      }
+
+      .childContainer, .childContainer2 {
+        width: 48%;                   
+        padding: 20px;
+        box-sizing: border-box;        
+      }
+      
+  
